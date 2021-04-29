@@ -36,7 +36,11 @@ The image above shows the distributed architecture of JenTab. Here you are a bri
 ## Quick Setup
 The fastest way to get JenTab up and running is via docker setup, with the following order.
 
-1. Manager  ```docker-compose -f docker-compose.manager.yml up ``` 
+1. Manager
+```
+cd services
+docker-compose -f docker-compose.manager.yml up
+``` 
 2. Other services ```docker-compose -f docker-compose.yml up```
 3. Runner ```python run.py```. Make sure that you point to the correct directory using ```cd /Runner```
 
